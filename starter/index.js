@@ -1,22 +1,15 @@
 const fs = require("fs");
-const path = require('path');
-const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const questions = require("./utils/questions");
+//const inquirer = require("inquirer");
 
-// array of questions for user
-const questions = [
-
-];
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
-// function to initialize program
 function init() {
-
+  // creates readme.md file if it does not exist
+  const pathToFile = "./test.txt";
+  fs.appendFile("readme.md", "", (error) => (error ? console.log(error) : ""));
+  // tests if file path is true, then proceeds further
+  if (pathToFile) {
+    questions();
+  }
 }
 
-// function call to initialize program
 init();
-
