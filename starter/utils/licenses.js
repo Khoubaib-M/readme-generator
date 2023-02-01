@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const questions = require("./questions.js");
+const questions = require("./questions");
 
 // list of licenses
 let LicenseObject = [

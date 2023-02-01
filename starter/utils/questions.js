@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const LicenseObject = require("./licenses.js");
+const LicenseObject = require("./licenses");
 const readmePath = "./readme.md";
 
 function questions() {
